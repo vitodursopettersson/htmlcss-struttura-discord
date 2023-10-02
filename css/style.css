@@ -10,6 +10,10 @@ Reset Default
     box-sizing: border-box;
 }
 
+
+
+
+
 /* 
 ***************
 Design System
@@ -22,11 +26,19 @@ body {
     font-size: 14px;
 }
 
+section {
+    padding: 26px 0px;
+}
+
 .container {
     width: 1000px;
     margin: 0 auto;
     display: flex;
 }
+
+
+
+
 
 /* 
 +++++++++++++++
@@ -34,21 +46,42 @@ Debug
 +++++++++++++++
 */
 
+/* Debug Common */
+
 .debug>*>*>* {
     border: black dashed 1px;
 }
+
+.debug main .container {
+    height: 400px;
+}
+
+/* Debug Header */
 
 .debug header {
     background-color: #ADD8E6;
 }
 
-.debug .container {
+.debug header .container>* {
+    padding: 8px;
     background-color: #DAA520;
 }
 
-.debug header .container>* {
-    padding: 8px;
+/* Debug Above */
+
+.debug .above {
+    background-color: #18008B;
 }
+
+.debug .above .container {
+    background-color: #EE82EE;
+    width: 800px;
+}
+
+.debug main .container {
+    height: 300px;
+}
+
 
 /* 
 ---------------
@@ -69,14 +102,24 @@ nav {
     text-align: center;
 }
 
-.login {
-    width: 20%;
-    text-align: end;
-}
-
 .menu {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
+.login {
+    width: 20%;
+    text-align: end;
+}
+
+
+
+
+
+/* 
+---------------
+Main
+---------------
+*/
