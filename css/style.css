@@ -16,13 +16,17 @@ Design System
 ***************
 */
 
+body {
+    font-family: Helvetica, sans-serif, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 .container {
     width: 1000px;
     margin: 0 auto;
     display: flex;
-    padding: 6px 8px;
 }
-
 
 /* 
 +++++++++++++++
@@ -30,12 +34,20 @@ Debug
 +++++++++++++++
 */
 
+.debug>*>*>* {
+    border: black dashed 1px;
+}
+
 .debug header {
     background-color: #ADD8E6;
 }
 
-.container {
+.debug .container {
     background-color: #DAA520;
+}
+
+.debug header .container>* {
+    padding: 8px;
 }
 
 /* 
@@ -52,10 +64,19 @@ header {
     width: 20%;
 }
 
-.menu {
+nav {
     width: 60%;
+    text-align: center;
 }
 
 .login {
     width: 20%;
+    text-align: end;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
