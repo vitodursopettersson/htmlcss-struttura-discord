@@ -81,9 +81,10 @@ Debug
     background-color: #EE82EE;
 }
 
-.debug main .container {
+.debug main .above .container {
     height: 300px;
 }
+
 
 /* Debug Main Section */
 
@@ -95,6 +96,9 @@ Debug
     background-color: #D3D3D3;
 }
 
+.debug main>section:last-child .container {
+    height: 600px;
+}
 
 /* Debug Column */
 
@@ -108,7 +112,6 @@ Debug
 
 .debug .fullwidth-column {
     background-color: #228B22;
-    height: 500px;
 }
 
 /* 
