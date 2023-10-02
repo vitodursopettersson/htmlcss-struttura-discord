@@ -30,15 +30,15 @@ section {
     padding: 34px 0px;
 }
 
+footer section {
+    padding-top: 20px;
+}
+
 .container {
     width: 1000px;
     margin: 0 auto;
     display: flex;
 }
-
-
-
-
 
 /* 
 +++++++++++++++
@@ -46,7 +46,7 @@ Debug
 +++++++++++++++
 */
 
-/* Debug Common */
+/* Debug Border */
 
 .debug header>*>* {
     border: black dashed 1px;
@@ -57,6 +57,10 @@ Debug
 }
 
 .debug main section>*>* {
+    border: black dashed 1px;
+}
+
+.debug footer section>*>* {
     border: black dashed 1px;
 }
 
@@ -112,6 +116,28 @@ Debug
 
 .debug .fullwidth-column {
     background-color: #228B22;
+}
+
+/* Debug Footer */
+
+.debug footer section {
+    background-color: #23272A;
+}
+
+.debug footer .container {
+    height: 500px;
+}
+
+.debug footer .big-collumn {
+    background-color: #F08080;
+}
+
+.debug footer .small-collumn {
+    background-color: #26B2AA;
+}
+
+.debug footer .group-small-collumn>* {
+    border: #ffffff dashed 1px;
 }
 
 /* 
@@ -173,4 +199,23 @@ Main
 
 .fullwidth-column {
     width: 100%;
+}
+
+/* 
+---------------
+Footer
+---------------
+*/
+
+footer .big-collumn {
+    width: 25%;
+}
+
+footer .group-small-collumn {
+    display: flex;
+    width: 75%;
+}
+
+footer .small-collumn {
+    width: calc(100%/4);
 }
