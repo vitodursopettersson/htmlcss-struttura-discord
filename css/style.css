@@ -9,3 +9,53 @@ Reset Default
     margin: 0;
     box-sizing: border-box;
 }
+
+/* 
+***************
+Design System
+***************
+*/
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding: 6px 8px;
+}
+
+
+/* 
++++++++++++++++
+Debug
++++++++++++++++
+*/
+
+.debug header {
+    background-color: #ADD8E6;
+}
+
+.container {
+    background-color: #DAA520;
+}
+
+/* 
+---------------
+Header
+---------------
+*/
+
+header {
+    padding: 10px 0px;
+}
+
+.brand {
+    width: 20%;
+}
+
+.menu {
+    width: 60%;
+}
+
+.login {
+    width: 20%;
+}
