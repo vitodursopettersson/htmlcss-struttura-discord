@@ -140,6 +140,20 @@ Debug
     border: #ffffff dashed 1px;
 }
 
+.debug section.footer {
+    border-top: #ffffff solid 1px;
+}
+
+.debug section.footer .container {
+    background-color: #7CF7CF;
+    height: 60px;
+}
+
+.debug section.footer .container>* {
+    background-color: #F2ADB9;
+    padding: 5px;
+}
+
 /* 
 ---------------
 Header
@@ -207,6 +221,8 @@ Footer
 ---------------
 */
 
+/* Menu Footer */
+
 footer .big-collumn {
     width: 25%;
 }
@@ -218,4 +234,15 @@ footer .group-small-collumn {
 
 footer .small-collumn {
     width: calc(100%/4);
+}
+
+/* Footer */
+
+section.footer {
+    padding: 20px 0px 0px
+}
+
+section.footer .container {
+    justify-content: space-between;
+    align-items: center;
 }
