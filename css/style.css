@@ -27,7 +27,7 @@ body {
 }
 
 section {
-    padding: 26px 0px;
+    padding: 34px 0px;
 }
 
 .container {
@@ -48,12 +48,16 @@ Debug
 
 /* Debug Common */
 
-.debug>*>*>* {
+.debug header>*>* {
     border: black dashed 1px;
 }
 
-.debug main .container {
-    height: 400px;
+.debug .container:empty {
+    border: black dashed 1px;
+}
+
+.debug main section>*>* {
+    border: black dashed 1px;
 }
 
 /* Debug Header */
@@ -75,13 +79,37 @@ Debug
 
 .debug .above .container {
     background-color: #EE82EE;
-    width: 800px;
 }
 
 .debug main .container {
     height: 300px;
 }
 
+/* Debug Main Section */
+
+.debug main .container {
+    height: 400px;
+}
+
+.debug main section:nth-child(2n + 3) {
+    background-color: #D3D3D3;
+}
+
+
+/* Debug Column */
+
+.debug .big-collumn {
+    background-color: #3790FF;
+}
+
+.debug .small-collumn {
+    background-color: #FDC0CB;
+}
+
+.debug .fullwidth-column {
+    background-color: #228B22;
+    height: 500px;
+}
 
 /* 
 ---------------
@@ -123,3 +151,23 @@ nav {
 Main
 ---------------
 */
+
+/* Above */
+
+.above .container {
+    width: 800px;
+}
+
+/* Container Collumn */
+
+.big-collumn {
+    width: 60%;
+}
+
+.small-collumn {
+    width: 40%;
+}
+
+.fullwidth-column {
+    width: 100%;
+}
